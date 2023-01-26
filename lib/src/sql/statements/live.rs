@@ -95,7 +95,7 @@ pub fn live(i: &str) -> IResult<&str, LiveStatement> {
 	Ok((
 		i,
 		LiveStatement {
-			id: Uuid::new(),
+			id: Uuid::new_v4(),
 			expr,
 			what,
 			cond,

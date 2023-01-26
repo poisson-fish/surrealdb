@@ -155,7 +155,7 @@ pub fn ulid(_: ()) -> Result<Value, Error> {
 }
 
 pub fn uuid(_: ()) -> Result<Value, Error> {
-	Ok(Uuid::new().into())
+	Ok(Uuid::new_v4().into())
 }
 
 pub mod uuid {
